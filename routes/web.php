@@ -26,6 +26,7 @@ Route::middleware([
     Route::get('add-drugs', function () {
         return view('add-drugs');
     })->name('add-drugs');
+    Route::get('add-drugs', 'App\Http\Controllers\DrugCategoriesController@show')->name('add-drugs');
     Route::post('drugs', 'App\Http\Controllers\DrugController@store')->name('drugs.store'); 
     Route::get('drugs', 'App\Http\Controllers\DrugController@create')->name('drugs.create');
     Route::get('drugs-api', 'App\Http\Controllers\DrugController@index')->name('drugs.index');

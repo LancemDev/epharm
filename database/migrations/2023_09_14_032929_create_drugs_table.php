@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('image');
             $table->string('category');
             $table->timestamps();
+
+            $table->foreign('category')->references('name')->on('drug_categories');
         });
     }
 

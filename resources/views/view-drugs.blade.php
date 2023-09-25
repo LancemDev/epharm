@@ -12,8 +12,8 @@
                     <ul class="list-disc">
                         <li>
                             <div class="flex flex-col md:flex-row">
-                                <div class="md:w-1/3">
-                                    <img src="{{ asset('images/'.$drug->image) }}" alt="image" class="w-full h-16 md:h-auto md:w-24 object-cover rounded-lg">
+                                <div class="md:w-1/4">
+                                    <img src="{{ asset('images/'.$drug->image) }}" alt="image" class="w-60 h-60 md:h-auto object-cover rounded-lg">
                                 </div>
                                 <div class="p-4 md:w-3/4">
                                     Drug Name: <h2 class="text-2xl font-bold text-gray-800 dark:text-white">{{ $drug->name }}</h2>

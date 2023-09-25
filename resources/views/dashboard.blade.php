@@ -13,7 +13,7 @@
                     <li>
                         <div class="flex flex-col">
                             <div>
-                                <img src="{{ asset('images/'.$drug->image) }}" alt="image" class="w-36 h-2 object-cover rounded-lg">
+                                <img src="{{ asset('images/'.$drug->image) }}" alt="image" class="w-60 h-50 object-cover rounded-lg">
                             </div>
                             <div class="p-4">
                                 <a href="{{ route('drugs.show', $drug->id) }}" class="block mt-1 text-lg leading-tight font-medium text-white hover:bg-sky-700">View more details about {{ $drug->name }}</a>

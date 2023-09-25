@@ -56,5 +56,13 @@
                 </x-button>
             </div>
         </form>
+        @isset($feedbackMessage)
+            <div id="feedback-container"></div>
+            <script>
+                // Display the feedback message using JavaScript
+                showFeedback("{{ $feedbackMessage }}");
+            </script>
+        @endisset
     </x-authentication-card>
 </x-guest-layout>
+<script src="{{ asset('js/feedback.js') }}"></script>
